@@ -1,50 +1,40 @@
-# COVID-19 Global Impact Dashboard 🦠📊
+# 🦠 COVID-19 Global Data Analysis
 
-An interactive Power BI dashboard analyzing global COVID-19 data — cases, deaths, infection rates, and continent-wise trends — built using the **Our World in Data (OWID)** dataset.
+A data analysis project exploring global COVID-19 trends using the **Our World in Data (OWID)** dataset — covering case counts, deaths, testing, and demographic/economic factors across 200+ countries.
 
-## 📌 Overview
+## 📊 Project Overview
+This project answers questions like:
+- Which countries had the highest total cases and deaths?
+- How did continents compare in overall impact?
+- What does India's COVID-19 trend look like over time?
+- Which countries had the highest Case Fatality Rate (CFR)?
+- Do socioeconomic factors (GDP, median age, population density) correlate with COVID impact?
 
-This dashboard provides a comprehensive view of the COVID-19 pandemic's global impact, allowing users to explore case counts, mortality rates, and trends across countries and continents through interactive visuals.
+## 🛠️ Tools & Libraries
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Jupyter Notebook
 
-## ✨ Features
+## 📁 Files
+- `covid19_analysis.ipynb` — Main analysis notebook (data cleaning, EDA, visualizations, insights)
+- `owid-covid-data.csv` — Dataset (source: Our World in Data)
+- `*.png` — Exported chart images
 
-- **KPI Cards** – Total Cases, Case Fatality Rate (%), Infection Rate (%), Total Population, Total Deaths
-- **Interactive Continent Slicer** – Filter the entire dashboard by continent with a single click
-- **Top Countries by Cases** – Bar chart showing countries with the highest case counts
-- **Cases by Continent** – Donut chart breaking down global cases by region
-- **New Cases Trend** – Line chart tracking new cases over time (Jan 2020 – Jul 2020)
-- **Top Countries by Deaths** – Bar chart highlighting mortality by country
-- **Detailed Data Table** – Country-level breakdown of cases, deaths, and population
-- **Cross-Filtering** – All visuals update dynamically based on slicer selection
+## 🔍 Key Insights
+- COVID-19 spread and impact were highly uneven across countries and continents.
+- India's case/death trends show distinct wave patterns over time.
+- Case Fatality Rate varies significantly by country, influenced by testing capacity and healthcare access — not just virus severity.
+- Socioeconomic factors like median age and GDP per capita show correlation with deaths-per-million, though correlation ≠ causation.
 
-## 🛠️ Tools Used
+## 📌 Dataset Source
+[Our World in Data — COVID-19 Dataset](https://ourworldindata.org/covid-cases)
 
-- **Power BI Desktop**
-- **DAX** (for CFR% and Infection Rate% measures)
-- **Data Source:** [Our World in Data - COVID-19 Dataset](https://ourworldindata.org/covid-cases)
-
-## 📊 Key Measures (DAX)
-
-```dax
-CFR = DIVIDE(SUM('owid-covid-data'[total_deaths]), SUM('owid-covid-data'[total_cases]))
-
-InfectionRate = DIVIDE(SUM('owid-covid-data'[total_cases]), SUM('owid-covid-data'[population]))
+## 🚀 How to Run
+```bash
+pip install pandas numpy matplotlib seaborn jupyter
+jupyter notebook covid19_analysis.ipynb
 ```
 
-## 🎨 Design
-
-The dashboard follows a clean **black & red theme** for high contrast and visual impact, making key metrics easy to read at a glance.
-
-## 📁 How to Use
-
-1. Download the `.pbix` file from this repository
-2. Open it in Power BI Desktop
-3. Use the **Continent slicer** to filter data by region
-4. Explore trends, comparisons, and country-level details
-
-## 👤 Author
-
-**Shaik Thamkin Banu**
-
 ---
-⭐ If you found this useful, feel free to star this repository!
+*Project built as part of a Data Analyst portfolio.*
