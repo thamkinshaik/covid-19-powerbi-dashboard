@@ -1,6 +1,6 @@
 # 🦠 COVID-19 Global Data Analysis
 
-A data analysis project exploring global COVID-19 trends using the **Our World in Data (OWID)** dataset — covering case counts, deaths, testing, and demographic/economic factors across 200+ countries.
+A data analysis project exploring global COVID-19 trends using the **Our World in Data (OWID)** dataset — covering case counts, deaths, testing, and demographic/economic factors across 200+ countries
 
 ## 📊 Project Overview
 This project answers questions like:
