@@ -8,7 +8,7 @@ This project answers questions like:
 - How did continents compare in overall impact?
 - What does India's COVID-19 trend look like over time?
 - Which countries had the highest Case Fatality Rate (CFR)?
-- Do socioeconomic factors (GDP, median age, population density) correlate with COVID impact?
+- Do socioeconomic factors (GDP, median age, population density) correlate with COVID impact
 
 ## 🛠️ Tools & Libraries
 - Python
